@@ -157,6 +157,8 @@ wfLoadExtension( 'Cargo' );
 wfLoadExtension( 'PageForms' );
 //enableSemantics( 'bangkok.source.in.th' );
 wfLoadExtension( 'Interwiki' );
+wfLoadExtension( 'OpenGraphMeta' );
+
 $wgGroupPermissions['sysop']['interwiki'] = true;
 
 if (empty($auth0ClientId)) die('Missing variable $auth0ClientId');
