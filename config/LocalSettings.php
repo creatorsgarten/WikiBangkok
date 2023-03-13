@@ -30,7 +30,8 @@ $wgSitename = "WikiBangkok";
 $wgScriptPath = "/w";
 
 ## The protocol and server name to use in fully-qualified URLs
-$wgServer = "https://bangkok.source.in.th";
+$wgServer = getenv('MW_SITE_SERVER');
+if (empty($wgServer)) die('Missing variable $wgServer');
 
 ## The URL path to static resources (images, scripts, etc.)
 $wgResourceBasePath = $wgScriptPath;
