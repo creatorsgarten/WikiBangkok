@@ -16,5 +16,8 @@ services:
   elasticsearch:
     deploy:
       replicas: 0
-  #caddy:
+  caddy:
+    environment:
+      CADDY_HOST: ${CADDY_HOST:-${MW_SITE_FQDN}:${HTTPS_PORT}}
+      CADDY_TARGET: ${CADDY_TARGET:-varnish:80}
   #varnish:
