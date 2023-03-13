@@ -86,6 +86,8 @@ sub vcl_recv {
         }
     }
 
+    # cache is broken so disable it for now!
+    return(pass);
     return (hash);
 }
 
