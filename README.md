@@ -1,8 +1,6 @@
 # WikiBangkok
 
 ## Development
-The instructions here are under construction!
-
 - Clone the repository.
 
 - Create `.env` file based on `.env.example`:
@@ -22,3 +20,5 @@ The instructions here are under construction!
   ```sh
   docker compose up -d
   ```
+
+- You should be able to access the wiki at <http://localhost:8080/>
