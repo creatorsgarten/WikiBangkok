@@ -1,6 +1,7 @@
 # WikiBangkok
 
 ## Development
+
 - Clone the repository.
 
 - Create `.env` file based on `.env.example`:
@@ -19,6 +20,12 @@
 
   ```sh
   docker compose up -d
+  ```
+
+- Restore database:
+
+  ```sh
+  docker compose exec -T db mysql -pmediawiki < config/db.sql
   ```
 
 - You should be able to access the wiki at <http://localhost:8080/>
